@@ -62,8 +62,8 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
     }
     public override void OnCreatedRoom()
     {
-        Debug.Log("Oda kuruldu len");
-        logText.text = "Oda kuruldu len";
+        Debug.Log("Oda kuruldu");
+        logText.text = "Oda kuruldu ";
     }
     private void CreatedOrJoinedRoom()
     {
@@ -88,20 +88,20 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
     }
     public override void OnLeftRoom()
     {
-        Debug.Log("Odadan siktir olup gidildi");
-        logText.text = "Odadan siktir olup gidildi";
+        Debug.Log("Odadan gidildi");
+        logText.text = "Odadan gidildi";
     }
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
-        Debug.Log("Lobi Oluşturulamadı amk. Büyük ihtimal lobi isimleri çakıştı. Bir daha dene yavrum");
-        logText.text = "Lobi Oluşturulamadı amk. Büyük ihtimal lobi isimleri çakıştı. Bir daha dene yavrum";
+        Debug.Log("Lobi Oluşturulamadı. Büyük ihtimal lobi isimleri çakıştı. Bir daha dene yavrum");
+        logText.text = "Lobi Oluşturulamadı. Büyük ihtimal lobi isimleri çakıştı. Bir daha dene yavrum";
     }
     public void OnJoinRoomButtonClicked()
     {
         if (odaAdi.text == "")
         {
-            Debug.Log("Oda Adı yaz önce amk!");
-            logText.text = "Oda Adı yaz önce amk!";
+            Debug.Log("Oda Adı yaz önce!");
+            logText.text = "Oda Adı yaz önce!";
         }
         else
         {

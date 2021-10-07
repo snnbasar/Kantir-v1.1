@@ -89,7 +89,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks, IInRoomCallbacks
     {
         base.OnJoinedRoom();
         Debug.Log("Succsessfully joined room");
-        logText.text = "Odaya katıldın len mk";
+        logText.text = "Odaya katıldın";
         if (PhotonNetwork.IsMasterClient)
         {
             startButton.SetActive(true);
@@ -159,7 +159,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks, IInRoomCallbacks
         base.OnPlayerLeftRoom(otherPlayer);
         Debug.Log(otherPlayer.NickName +" odadan ayrıldı");
         if(logText != null)
-            logText.text = otherPlayer.NickName + " odadan siktir oldu gitti";
+            logText.text = otherPlayer.NickName + " odadan gitti";
         playersInRoom--;
 
         if (!isGameLoaded)
