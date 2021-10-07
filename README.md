@@ -1,2 +1,2 @@
 # Kantir-v1.1
- An online game
+ An online game based on Counter Strike. But in this you can have some boosts...
